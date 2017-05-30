@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd"><hibernate-mapping><class name="com.pro.entity.ApplyInfo" table="t_applyinfo"><id name="id" type="java.lang.Integer"><column name="id"/><generator class="native"/></id><property access="field" column="t_stuid" length="200" name="stuid"/><property access="field" column="t_stuname" length="200" name="stuname"/><property access="field" column="t_status" length="200" name="status"/><property access="field" column="t_stunum" length="200" name="stunum"/><property access="field" column="t_college" length="200" name="college"/><property access="field" column="t_classinfo" length="200" name="classinfo"/><property access="field" column="t_dormitory" length="200" name="dormitory"/><property access="field" column="t_date" length="200" name="date"/><property access="field" column="t_content" length="2000" name="content"/><property access="field" column="t_remark" length="2000" name="remark"/>
+
+<property access="field" column="t_zy" length="2000" name="zy"/>
+<property access="field" column="t_qf" length="2000" name="qf"/>
+<property access="field" column="t_sex" length="2000" name="sex"/>
+<property access="field" column="t_jg" length="2000" name="jg"/>
+<property access="field" column="t_file" length="2000" name="file"/>
+<property access="field" column="t_name" length="2000" name="name"/>
+<property access="field" column="t_bumen" length="2000" name="bumen"/>
+<property access="field" column="t_bmdate" length="2000" name="bmdate"/>
+<property name="isgood" column="t_isgood" access="field"/>
+</class></hibernate-mapping>

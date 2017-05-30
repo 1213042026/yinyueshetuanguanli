@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ include file="/sys_jsp/base.jsp"%>
+<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+			<title><public:i18n key="system.name" module="system"></public:i18n></title>
+			<script type="text/javascript" src="<%=basePath %>pro_js/zhaoPin/zhaoPin.js"></script>
+		</head>
+
+		<body>
+			<div id="main-content">
+			<div class="content-box">
+			<div class="content-box-header">
+			<h3><public:i18n key="function.detail" module="zhaoPin"></public:i18n></h3>
+			<ul class="content-box-tabs">
+				<li><a href="#tab1" class="default-tab">活动详情</a></li>
+			</ul>
+			<div class="clear"></div>
+			</div>
+			<div class="content-box-content">
+			<jsp:include page="/sys_jsp/notification.jsp"></jsp:include>
+			<div class="tab-content default-tab" id="tab1">
+				<fieldset>
+					<p>
+						<b><public:i18n key="title" module="zhaoPin"></public:i18n>:</b>
+						<label>${result.title}</label>
+					</p>
+					<p>
+						<b><public:i18n key="content" module="zhaoPin"></public:i18n>:</b>
+						<label>${result.content}</label>
+					</p>
+					
+					<p>
+						<b><public:i18n key="datetime" module="zhaoPin"></public:i18n>:</b>
+						<label>${result.datetime}</label>
+					</p>
+					<p>
+						<b>操作:</b>
+						<label><a href="<%=basePath %>zhaoPin/zhaoPin_detail4front1.do?flag=baoming&id=${result.id}">报名</a></label>
+					</p>
+							
+				</fieldset>
+				<div class="clear"></div>
+			</div>
+			</div>
+			</div>
+			</div>
+		</body>
+	</html>

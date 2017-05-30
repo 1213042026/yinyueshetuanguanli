@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root name="管理系统">
+    <manager name="系统管理" type="0">
+        <link href="./sys_jsp/admin/admin_add.jsp" name="添加用户" type="0"/>
+        <link href="admin/admin_query.do?username=" name="管理用户" type="0"/>
+         <!-- <link href="musicInfo/musicInfo_querysoucang.do" name="收藏歌曲统计" type="0"/> -->
+    </manager>
+    <manager name="个人信息管理" type="1">
+        <link href="./sys_jsp/admin/admin_changePassword.jsp" name="修改密码" type="0"/>
+    </manager>
+    <manager name="公告管理" show="false" type="0">
+        <link href="./plugin_jsp/announce/announce_add.jsp" name="添加公告" type="0"/>
+        <link href="./plugin_jsp/announce/announce_query.jsp" name="查询公告" type="0"/>
+    </manager>
+    <manager name="文件管理" show="false" type="0">
+        <link href="./plugin_jsp/jfile/jfile_add.jsp" name="添加文件" type="0"/>
+        <link href="./plugin_jsp/jfile/jfile_query.jsp" name="查询文件" type="0"/>
+    </manager>
+    <manager name="数据库管理" show="false" type="0">
+        <link href="./sys_jsp/database/database_backup.jsp" name="备份数据库" type="0"/>
+        <link href="./sys_jsp/database/database_restore.jsp" name="还原数据库" type="0"/>
+    </manager>
+    
+    
+    
+    
+    <manager name="入社申请管理" type="1">
+    	<!-- 
+    	<link href="./pro_jsp/applyInfo/applyInfo_add.jsp" name="添加入社申请" type="0"/>
+    	 -->
+        
+        <link href="./pro_jsp/applyInfo/applyInfo_query.jsp" name="查询入社申请" type="0"/>
+    </manager>
+    <manager name="部门管理" type="1">
+        <link href="./pro_jsp/buMen/buMen_add.jsp" name="添加部门" type="0"/>
+        <link href="./pro_jsp/buMen/buMen_query.jsp" name="查询部门" type="0"/>
+    </manager>
+    <manager name="歌曲收藏管理" type="1">
+    	
+    	
+    <!-- 	<link href="./pro_jsp/collectMusic/collectMusic_add.jsp" name="添加歌曲收藏" type="0"/> -->
+        
+        <!-- <link href="./pro_jsp/collectMusic/collectMusic_query.jsp" name="查询歌曲收藏" type="0"/> -->
+        <link href="musicInfo/musicInfo_querysoucang.do" name="收藏歌曲统计" type="0"/>
+    </manager>
+    <manager name="留言板管理" type="1">
+    	<!-- 
+    	<link href="./pro_jsp/liuYanBan/liuYanBan_add.jsp" name="添加留言板" type="0"/>
+    	 -->
+        
+        <link href="./pro_jsp/liuYanBan/liuYanBan_query.jsp" name="查询留言板" type="0"/>
+    </manager>
+    <manager name="歌曲信息管理" type="1">
+    	<!-- 
+    	
+    	<link href="./pro_jsp/musicInfo/musicInfo_add.jsp" name="添加歌曲信息" type="0"/> -->
+        
+        <link href="./pro_jsp/musicInfo/musicInfo_query.jsp" name="查询歌曲信息" type="0"/>
+    </manager>
+    <manager name="社团动态管理" type="1">
+        <link href="./pro_jsp/news/news_add.jsp" name="添加社团动态" type="0"/>
+        <link href="./pro_jsp/news/news_query.jsp" name="查询社团动态" type="0"/>
+    </manager>
+    <manager name="评论信息管理" type="1">
+    	<!-- 
+    	<link href="./pro_jsp/pingLun/pingLun_add.jsp" name="添加评论信息" type="0"/>
+    	 -->
+        
+        <link href="./pro_jsp/pingLun/pingLun_query.jsp" name="查询评论信息" type="0"/>
+    </manager>
+    <manager name="招募贴管理" type="1">
+        <link href="./pro_jsp/zhaoPin/zhaoPin_add.jsp" name="添加招募贴" type="0"/>
+        <link href="./pro_jsp/zhaoPin/zhaoPin_query.jsp" name="查询招募贴" type="0"/>
+    </manager>
+     <manager name="社团活动" type="1">
+        <link href="./pro_jsp/zhaoPin/zhaoPin_add1.jsp" name="添加活动" type="0"/>
+        <link href="zhaoPin/zhaoPin_query1.do" name="查询活动" type="0"/>
+    </manager>
+</root>
